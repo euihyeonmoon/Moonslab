@@ -3,13 +3,13 @@ import pyupbit
 import datetime
 import requests
 
-access = "your-acess"
-secret = "your-secret"
-myToken = "xoxb-your-token"
+access = "Rr8RSsNxnxDJ1qml3xrd0QpbSVSDSOx9Uy6KffGq"
+secret = "3yiNtc3jEthUZxSLW03lW7vzMh4g0xHn7IPsoIxy"
+myToken = "xoxb-2038662152470-2045652622435-HL0npoSvFPocRhlw8BvgoHZG"
 
 def post_message(token, channel, text):
     """슬랙 메시지 전송"""
-    response = requests.post("https://slack.com/api/chat.postMessage",
+    response = requests.post("https://slack.	com/api/chat.postMessage",
         headers={"Authorization": "Bearer "+token},
         data={"channel": channel,"text": text}
     )
